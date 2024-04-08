@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Excusas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+  <p id="excuse">Loading...</p>
+
+  <script>
+    // Arrays con partes de la excusa
+    let who = ['El perro', 'Mi abuela', 'El cartero', 'Mi pájaro'];
+    let action = ['se comió', 'orinó en', 'aplastó', 'rompió'];
+    let what = ['mi tarea', 'mi teléfono', 'el coche'];
+    let when = ['antes de la clase', 'mientras dormía', 'mientras hacía ejercicio', 'durante mi almuerzo', 'mientras rezaba'];
+
+    // Función para generar una excusa aleatoria
+    function generateExcuse() {
+      let randomWho = who[Math.floor(Math.random() * who.length)];
+      let randomAction = action[Math.floor(Math.random() * action.length)];
+      let randomWhat = what[Math.floor(Math.random() * what.length)];
+      let randomWhen = when[Math.floor(Math.random() * when.length)];
+      
+      return `${randomWho} ${randomAction} ${randomWhat} ${randomWhen}.`;
+    }
+    // Mostrar la excusa generada al cargar la página
+    window.onload = function() {
+      document.getElementById('excuse').innerText = generateExcuse();
+    };
+  </script>
+    <!-- // Parrafo de último proyecto   -->
+  <p id="ultimo"><i><br>#ultimoProyecto</i></p>
+</body>
+</html>

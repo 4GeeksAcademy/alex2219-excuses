@@ -1,0 +1,19 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  #excuse {
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+  
+  }
+  #ultimo {
+      margin-left: 10px;
+      color: red;
+      font-size: 20px;
+  }
